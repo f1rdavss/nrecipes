@@ -1,0 +1,57 @@
+.recipe {
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+        align-items: flex-start;
+        position: relative;
+        z-index: 1;
+        
+        &-banner {
+            display: grid;
+            gap: 10px;
+            position: sticky;
+            z-index: -1;
+            top: 10px;
+        }
+        
+        &-image {
+            border-radius: 6px;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+                aspect-ratio: 1;
+            }
+        }
+        
+        &-tags {
+            display: flex;
+            gap: 10px;
+        }
+        
+        &-btns {
+            display: flex;
+            gap: 12px;
+        }
+        
+        &-desc {
+            display: grid;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 6px;
+            backdrop-filter: blur(6px);
+        }
+        
+        &-list {
+            list-style: list;
+            padding-left: 20px;
+            display: grid;
+            gap: 4px;
+        }
+        
+        &-tagLink {
+            color: #fff;
+        }
+    }
+}
